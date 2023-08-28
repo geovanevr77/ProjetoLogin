@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemaLogin.Apresentacao;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,18 @@ namespace SistemaLogin {
     public partial class Form1 : Form {
         public Form1() {
             InitializeComponent();
+        }
+
+        private void btnCadastrese_Click(object sender, EventArgs e) {
+
+            CadastraSe cad = new CadastraSe();
+            cad.Show();
+
+        }
+
+        private void btnSair_Click(object sender, EventArgs e) {
+
+            Application.Exit();
         }
     }
 }

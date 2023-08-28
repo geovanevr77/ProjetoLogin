@@ -46,14 +46,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Apresentacao\BemVindo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Apresentacao\BemVindo.Designer.cs">
+      <DependentUpon>BemVindo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentacao\CadastraSe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\CadastraSe.Designer.cs">
+      <DependentUpon>CadastraSe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentacao\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dal\Conexao.cs" />
+    <Compile Include="Dal\LoginDaoComandos.cs" />
+    <Compile Include="Modelo\Controle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Apresentacao\BemVindo.resx">
+      <DependentUpon>BemVindo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentacao\CadastraSe.resx">
+      <DependentUpon>CadastraSe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentacao\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
